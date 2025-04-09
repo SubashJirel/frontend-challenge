@@ -24,11 +24,13 @@ body {
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: white;
+  max-width: 333.5px;
+  height: 165.5px;
+  transition: all 0.3s ease;
 }
 
 .dashboard-row {
@@ -82,9 +84,9 @@ body {
 }
 
 .menu-item.active {
-  color: #4f46e5;
+  color: #4745a4;
   background-color: rgba(79, 70, 229, 0.1);
-  border-left: 3px solid #4f46e5;
+  border-left: 3px solid #4745a4;
 }
 
 .menu-item:hover:not(.active) {
@@ -191,4 +193,166 @@ i {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+/* Card styles */
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.see-all {
+  color: #4745a4;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.balance-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.icon-circle {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-icon {
+  font-size: 1.2rem;
+}
+
+.stats {
+  font-size: 0.85rem;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.stats-up i {
+  color: #10b981;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 16px 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.arrow-icon i {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .arrow-icon i {
+  transform: translateX(5px);
+}
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle i {
+  font-size: 32px;
+}
+
+.balance-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.saving-icon {
+  background-color: rgba(103, 232, 149, 0.2);
+  color: #67e895;
+}
+
+.expense-icon {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.income-icon {
+  background-color: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.stats-up {
+  color: #10b981;
+}
+
+.stats-down {
+  color: #ef4444;
+}
+
+.stats i {
+  font-size: 10px;
+}
+
+.amount {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Add transition for hover effects */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
