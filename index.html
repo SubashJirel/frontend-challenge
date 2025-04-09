@@ -86,157 +86,279 @@
       </div>
 
       <div class="dashboard-container">
-        <section class="card-wrapper">
-          <div class="section-title">
-            <h2>Overview</h2>
-          </div>
+        <div class="middle-container">
+          <section class="card-wrapper">
+            <div class="section-title">
+              <h2>Overview</h2>
+            </div>
 
-          <!-- Balance and Saving Cards -->
+            <!-- Balance and Saving Cards -->
+            <div class="dashboard-row">
+              <div class="card balance-card">
+                <div class="card-header">
+                  <div class="card-title">
+                    <div class="icon-circle balance-icon">
+                      <i class="fas fa-wallet"></i>
+                    </div>
+                    <div>
+                      <h3>Your Balance</h3>
+                      <div class="stats stats-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>15% compared with last month</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="card-body">
+                  <div class="amount">$28,891.138</div>
+                  <div class="arrow-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card saving-card">
+                <div class="card-header">
+                  <div class="card-title">
+                    <div class="icon-circle saving-icon">
+                      <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <div>
+                      <h3>Saving</h3>
+                      <div class="stats stats-down">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>10% compared with last month</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="card-body">
+                  <div class="amount">$1,050.44</div>
+                  <div class="arrow-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Expenses and Incomes Cards -->
+            <div class="dashboard-row">
+              <div class="card expense-card">
+                <div class="card-header">
+                  <div class="card-title">
+                    <div class="icon-circle expense-icon">
+                      <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div>
+                      <h3>Expenses</h3>
+                      <div class="stats stats-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>2% compared with last month</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="card-body">
+                  <div class="amount">$200.31</div>
+                  <div class="arrow-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card income-card">
+                <div class="card-header">
+                  <div class="card-title">
+                    <div class="icon-circle income-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div>
+                      <h3>Incomes</h3>
+                      <div class="stats stats-up">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>8% compared with last month</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="card-body">
+                  <div class="amount">$21,121.0</div>
+                  <div class="arrow-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Analytics Chart -->
           <div class="dashboard-row">
-            <div class="card balance-card">
-              <div class="card-header">
-                <div class="card-title">
-                  <div class="icon-circle balance-icon">
-                    <i class="fas fa-wallet"></i>
+            <div class="card-wrapper full-width">
+              <div class="chart-header">
+                <h3>Analytics</h3>
+                <div class="chart-labels">
+                  <div class="chart-label">
+                    <div class="label-color label-blue"></div>
+                    <span>Label 1</span>
                   </div>
-                  <div>
-                    <h3>Your Balance</h3>
-                    <div class="stats stats-up">
-                      <i class="fas fa-arrow-up"></i>
-                      <span>15% compared with last month</span>
-                    </div>
+                  <div class="chart-label">
+                    <div class="label-color label-yellow"></div>
+                    <span>Label 2</span>
                   </div>
                 </div>
+                <select class="chart-select">
+                  <option>Weekly</option>
+                  <option>Monthly</option>
+                  <option>Yearly</option>
+                </select>
               </div>
-              <div class="divider"></div>
-              <div class="card-body">
-                <div class="amount">$28,891.138</div>
-                <div class="arrow-icon">
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
+              <div class="chart-container" id="analyticsChart"></div>
             </div>
-
-            <div class="card saving-card">
-              <div class="card-header">
-                <div class="card-title">
-                  <div class="icon-circle saving-icon">
-                    <i class="fas fa-piggy-bank"></i>
-                  </div>
-                  <div>
-                    <h3>Saving</h3>
-                    <div class="stats stats-down">
-                      <i class="fas fa-arrow-down"></i>
-                      <span>10% compared with last month</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="card-body">
-                <div class="amount">$1,050.44</div>
-                <div class="arrow-icon">
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Expenses and Incomes Cards -->
-          <div class="dashboard-row">
-            <div class="card expense-card">
-              <div class="card-header">
-                <div class="card-title">
-                  <div class="icon-circle expense-icon">
-                    <i class="fas fa-chart-pie"></i>
-                  </div>
-                  <div>
-                    <h3>Expenses</h3>
-                    <div class="stats stats-up">
-                      <i class="fas fa-arrow-up"></i>
-                      <span>2% compared with last month</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="card-body">
-                <div class="amount">$200.31</div>
-                <div class="arrow-icon">
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="card income-card">
-              <div class="card-header">
-                <div class="card-title">
-                  <div class="icon-circle income-icon">
-                    <i class="fas fa-dollar-sign"></i>
-                  </div>
-                  <div>
-                    <h3>Incomes</h3>
-                    <div class="stats stats-up">
-                      <i class="fas fa-arrow-up"></i>
-                      <span>8% compared with last month</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="card-body">
-                <div class="amount">$21,121.0</div>
-                <div class="arrow-icon">
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Analytics Chart -->
-        <div class="dashboard-row">
-          <div class="card-wrapper full-width">
-            <div class="chart-header">
-              <h3>Analytics</h3>
-              <div class="chart-labels">
-                <div class="chart-label">
-                  <div class="label-color label-blue"></div>
-                  <span>Label 1</span>
-                </div>
-                <div class="chart-label">
-                  <div class="label-color label-yellow"></div>
-                  <span>Label 2</span>
-                </div>
-              </div>
-              <select class="chart-select">
-                <option>Weekly</option>
-                <option>Monthly</option>
-                <option>Yearly</option>
-              </select>
-            </div>
-            <div class="chart-container" id="analyticsChart"></div>
           </div>
         </div>
+        <div class="right-container">
+          <!-- Saving Plans and Recent Transactions -->
+          <div class="dashboard-row right-container">
+            <div class="card-right">
+              <div class="section-title">
+                <h3>Saving Plan</h3>
+                <a href="#" class="see-all">See All</a>
+              </div>
+              <div class="divider-right"></div>
+              <div class="saving-plans">
+                <div class="plan-item">
+                  <div class="plan-header">
+                    <div class="plan-title">Bali Vacation</div>
+                    <div class="plan-target">Target: August 25 2022</div>
+                  </div>
+                  <div class="plan-header">
+                    <div class="plan-amount">
+                      <span class="current-amount">$1950.21</span>
+                      <span class="total-amount">/$4000</span>
+                    </div>
+                    <div class="percentage percentage-bali">48%</div>
+                  </div>
+                  <div class="progress-container">
+                    <div class="progress-bar progress-bali"></div>
+                  </div>
+                </div>
 
-        <!-- Saving Plans and Recent Transactions -->
-        <div class="dashboard-row">
-          <div class="card">
-            <h3>Saving Plan</h3>
-            <div class="saving-plans">
-              <h4>Savings</h4>
+                <div class="plan-item">
+                  <div class="plan-header">
+                    <div class="plan-title">New Gadget</div>
+                    <div class="plan-target">Target: August 25 2022</div>
+                  </div>
+                  <div class="plan-header">
+                    <div class="plan-amount">
+                      <span class="current-amount">$790.21</span>
+                      <span class="total-amount">/$1000</span>
+                    </div>
+                    <div class="percentage percentage-gadget">79%</div>
+                  </div>
+                  <div class="progress-container">
+                    <div class="progress-bar progress-gadget"></div>
+                  </div>
+                </div>
+
+                <div class="plan-item">
+                  <div class="plan-header">
+                    <div class="plan-title">Charity</div>
+                    <div class="plan-target">Target: August 25 2022</div>
+                  </div>
+                  <div class="plan-header">
+                    <div class="plan-amount">
+                      <span class="current-amount">$32.11</span>
+                      <span class="total-amount">/$100</span>
+                    </div>
+                    <div class="percentage percentage-charity">32%</div>
+                  </div>
+                  <div class="progress-container">
+                    <div class="progress-bar progress-charity"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <h3>Recent Transaction</h3>
-            <div class="transactions-list">
-              <h4>Transactions</h4>
+            <div class="card-right card-right-txn">
+              <div class="section-title">
+                <h3>Recent Transaction</h3>
+                <a href="#" class="see-all">See All</a>
+              </div>
+              <div class="divider-right"></div>
+              <div class="transactions-list">
+                <div class="transaction-item">
+                  <div class="transaction-info">
+                    <div class="transaction-icon">
+                      <i class="fas fa-image"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-name">Figma</div>
+                      <div class="transaction-date">August 20, 2022</div>
+                    </div>
+                  </div>
+                  <div class="transaction-payment">
+                    <div class="transaction-amount">$100</div>
+                    <div class="transaction-status">Completed</div>
+                  </div>
+                </div>
+
+                <div class="transaction-item">
+                  <div class="transaction-info">
+                    <div class="transaction-icon">
+                      <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-name">Youtube</div>
+                      <div class="transaction-date">August 20, 2022</div>
+                    </div>
+                  </div>
+                  <div class="transaction-payment">
+                    <div class="transaction-amount">$120</div>
+                    <div class="transaction-status">Completed</div>
+                  </div>
+                </div>
+
+                <div class="transaction-item">
+                  <div class="transaction-info">
+                    <div class="transaction-icon">
+                      <i class="fab fa-spotify"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-name">Spotify</div>
+                      <div class="transaction-date">August 20, 2022</div>
+                    </div>
+                  </div>
+                  <div class="transaction-payment">
+                    <div class="transaction-amount">$15</div>
+                    <div class="transaction-status">Completed</div>
+                  </div>
+                </div>
+
+                <div class="transaction-item">
+                  <div class="transaction-info">
+                    <div class="transaction-icon">
+                      <i class="fas fa-paintbrush"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-name">Freepik</div>
+                      <div class="transaction-date">August 20, 2022</div>
+                    </div>
+                  </div>
+                  <div class="transaction-payment">
+                    <div class="transaction-amount">$300</div>
+                    <div class="transaction-status">Completed</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
