@@ -65,3 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new Chart(ctx, config);
 });
+
+// Add this to your main.js
+document
+  .querySelector(".mobile-menu-toggle")
+  .addEventListener("click", function () {
+    document.querySelector(".sidebar").classList.toggle("active");
+  });
