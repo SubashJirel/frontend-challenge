@@ -32,7 +32,18 @@ body {
   height: 165.5px;
   transition: all 0.3s ease;
 }
-
+.card-wrapper {
+  max-width: 732px;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 2rem;
+}
 .dashboard-row {
   display: flex;
   gap: 20px;
@@ -326,11 +337,11 @@ i {
 }
 
 .stats-up {
-  color: #10b981;
+  color: #6e738a;
 }
 
 .stats-down {
-  color: #ef4444;
+  color: #6e738a;
 }
 
 .stats i {
@@ -355,4 +366,60 @@ i {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* Chart styles */
+.chart-container {
+  height: 300px;
+  position: relative;
+}
+.card-chart {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  background-color: white;
+  max-width: 677px;
+
+  transition: all 0.3s ease;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-labels {
+  display: flex;
+  gap: 20px;
+}
+
+.chart-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.label-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.label-blue {
+  background-color: #4745a4;
+}
+
+.label-yellow {
+  background-color: #f8cd70;
+}
+
+.chart-select {
+  padding: 5px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
 }
