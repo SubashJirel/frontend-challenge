@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Dashboard</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-placeholder">
+          <h4>Logo</h4>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item active">Dashboard</div>
+        <div class="menu-item">Schedule</div>
+        <div class="menu-item">Message</div>
+        <div class="menu-item">Analytics</div>
+        <div class="menu-item">Team</div>
+      </div>
+      <div class="bottom-menu">
+        <div class="menu-item">Profile</div>
+        <div class="menu-item">Settings</div>
+        <div class="menu-item">Help</div>
+        <div class="menu-item">Logout</div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search here..."
+          />
+        </div>
+        <div class="user-menu">
+          <span>Mirie Kintani</span>
+        </div>
+      </div>
+
+      <div class="dashboard-container">
+        <div class="section-title">
+          <h2>Overview</h2>
+        </div>
+
+        <!-- Balance and Saving Cards -->
+        <div class="dashboard-row">
+          <div class="card balance-card">
+            <h3>Your Balance</h3>
+            <div class="amount">$28,891.138</div>
+          </div>
+          <div class="card saving-card">
+            <h3>Saving</h3>
+            <div class="amount">$1,050.44</div>
+          </div>
+        </div>
+
+        <!-- Expenses and Incomes Cards -->
+        <div class="dashboard-row">
+          <div class="card">
+            <h3>Expenses</h3>
+            <div class="amount">$200.31</div>
+          </div>
+          <div class="card">
+            <h3>Incomes</h3>
+            <div class="amount">$21,121.0</div>
+          </div>
+        </div>
+
+        <!-- Analytics Chart -->
+        <div class="dashboard-row">
+          <div class="card full-width">
+            <h3>Analytics</h3>
+            <div class="chart-container" id="analyticsChart">
+              <h4>Charts</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saving Plans and Recent Transactions -->
+        <div class="dashboard-row">
+          <div class="card">
+            <h3>Saving Plan</h3>
+            <div class="saving-plans">
+              <h4>Savings</h4>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Recent Transaction</h3>
+            <div class="transactions-list">
+              <h4>Transactions</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
