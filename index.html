@@ -14,7 +14,7 @@
     <button class="mobile-menu-toggle">
       <i class="fas fa-bars"></i>
     </button>
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-header">
         <div class="logo-placeholder">
           <i class="fas fa-wallet"></i>
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </nav>
     <div class="main-content">
       <div class="header">
         <div class="search-container">
@@ -89,7 +89,8 @@
         </div>
       </div>
 
-      <div class="dashboard-container">
+      <!-- Dashboard -->
+      <section class="dashboard-container">
         <div class="middle-container">
           <section class="card-wrapper">
             <div class="section-title">
@@ -206,7 +207,7 @@
           </section>
 
           <!-- Analytics Chart -->
-          <div class="dashboard-row">
+          <section class="dashboard-row">
             <div class="card-wrapper full-width">
               <div class="chart-header">
                 <h3>Analytics</h3>
@@ -228,11 +229,11 @@
               </div>
               <div class="chart-container" id="analyticsChart"></div>
             </div>
-          </div>
+          </section>
         </div>
-        <div class="right-container">
+        <aside class="right-container">
           <!-- Saving Plans and Recent Transactions -->
-          <div class="dashboard-row right-container">
+          <section class="dashboard-row right-container">
             <div class="card-right">
               <div class="section-title">
                 <h3>Saving Plan</h3>
@@ -364,9 +365,9 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </aside>
+      </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="./src/main.js"></script>
