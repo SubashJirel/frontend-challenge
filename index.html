@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval';"
+    />
     <title>Financial Dashboard</title>
     <link
       rel="stylesheet"
@@ -369,7 +373,7 @@
         </aside>
       </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>
